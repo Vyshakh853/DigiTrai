@@ -16,28 +16,33 @@
     <script src="includes/js/modernizr-2.6.2.min.js"></script>
     <!-- Using google fonts -->
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
     <!-- Div for Navbar and header -->
-    <div class="navbar navbar-fixed-top" id="header">
+    <div class="navbar navbar-default navbar-fixed-top" id="header">
         <!-- Div for container to allign the header contents in same as content of webpage -->
         <div class="container">
-            <!-- For button when you move to smaller scale -->
-            <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <!-- Used for Logo -->
-            <a class="navbar-brand logo" href="#"><img src="images/ktourism.jpg"></a>
+            <div class="navbar-header">
+                <!-- For button when you move to smaller scale -->
+                <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Used for Logo -->
+                <div id="logoimage">
+                    <a class="navbar-brand logo" href="#"><img id="logoimage" src="images/ktourism_large.jpg"></a>
+                </div>
+            </div>
             <!-- Div for contents in Navigation bar in header -->
-            <div class="nav-collapse collapse navbar-responsive-collapse header">
-                <h1 class="pull-left">Kerala Tourism</h1>
+            <div class="navbar-collapse collapse navbar-responsive-collapse header">
+                <!-- <h1 class="navbar-left visible-lg " id="title">Kerala Tourism</h1> -->
                 <!-- The components used in header section -->
                 <div id="component">
                     <!-- For the My Account tab in header -->
-                    <ul class="nav navbar-nav pull-right">
+                    <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>My Account<strong class="caret"></strong></a>
                             <ul class="dropdown-menu">
@@ -49,7 +54,7 @@
                         </li>
                     </ul>
                     <!-- For Home,Places,Contact tab in header -->
-                    <ul class="nav navbar-nav pull-right">
+                    <ul class="nav navbar-nav navbar-right">
                         <li class="active">
                             <a href="#">Home</a>
                         </li>
@@ -68,7 +73,7 @@
                         </li>
                     </ul>
                     <!-- Form tab for the search within the site -->
-                    <form class="navbar-form pull-right">
+                    <form class="navbar-form navbar-right">
                         <input type="text" class="form-control" placeholder="Search here.." name="search" id="searchinput">
                         <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
                     </form>
@@ -122,7 +127,7 @@
             <!-- First column -->
             <div class="col-sm-4 feature">
                 <!-- For the firt panel -->
-                <div class="panel">
+                <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">About Kerala</h3>
                     </div>
@@ -132,7 +137,7 @@
             </div>
             <!-- Second column -->
             <div class="col-sm-4 feature">
-                <div class="panel">
+                <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">God's own Country ?.</h3>
                     </div>
@@ -142,7 +147,7 @@
             </div>
             <!-- Third column -->
             <div class="col-sm-4 feature">
-                <div class="panel">
+                <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">Kerala Map</h3>
                     </div>
@@ -207,28 +212,28 @@
                 </div>
             </div>
             <!-- Second section or column -->
-            <div class="col-sm-6" id="secondSection">
+            <div class="col-sm-6">
                 <!-- Showing as a list group -->
-                <div class="list-group">
+                <div class="list-group" id="secondSection">
                     <!-- first list item  -->
                     <span class="list-group-item">
-							<h3 class="list-group-item-heading"><u>History</u></h3>
-							<p class="list-group-item-text">The history of Keralam, India, dates back many millennia. Stone age carvings in the Edakkal Caves feature pictorial writings believed to date to at least the Neolithic era around 5,000 BC, indicating the presence of a prehistoric civilisation or settlement in this region. From as early as 3000 BC, Kerala had established itself as a major spice trade centre. Keralam had direct contact across the Arabian Sea with all the major Mediterranean and Red Sea ports as well those of the Far East. The spice trade between Keralam and much of the world was one of the main drivers of the world economy. For much of history, ports in Keralam were the busiest (Muziris) among all trade and travel routes in the history of the world.</p>
-						</span>
+                            <h3 class="list-group-item-heading"><u>History</u></h3>
+                            <p class="list-group-item-text">The history of Keralam, India, dates back many millennia. Stone age carvings in the Edakkal Caves feature pictorial writings believed to date to at least the Neolithic era around 5,000 BC, indicating the presence of a prehistoric civilisation or settlement in this region. From as early as 3000 BC, Kerala had established itself as a major spice trade centre. Keralam had direct contact across the Arabian Sea with all the major Mediterranean and Red Sea ports as well those of the Far East. The spice trade between Keralam and much of the world was one of the main drivers of the world economy. For much of history, ports in Keralam were the busiest (Muziris) among all trade and travel routes in the history of the world.</p>
+                        </span>
                     <!-- Second list item -->
                     <span class="list-group-item">
-							<h3 class="list-group-item-heading"><u>People of Kerala</u></h3>
-							<p class="list-group-item-text">Kerala is one of India's most progressive states in terms of social welfare and quality of life. The State boasts of one of India's highest literacy rates, highest life expectancy and lowest child mortality rates. The literacy rate for women is one of the highest in all of Asia. Enjoying a unique cosmopolitan viewpoint, the people of Kerala, at all levels of society, have greater access to services and opportunities - as well as a greater say in their governance.
-							</p>
-						</span>
+                            <h3 class="list-group-item-heading"><u>People of Kerala</u></h3>
+                            <p class="list-group-item-text">Kerala is one of India's most progressive states in terms of social welfare and quality of life. The State boasts of one of India's highest literacy rates, highest life expectancy and lowest child mortality rates. The literacy rate for women is one of the highest in all of Asia. Enjoying a unique cosmopolitan viewpoint, the people of Kerala, at all levels of society, have greater access to services and opportunities - as well as a greater say in their governance.
+                            </p>
+                        </span>
                     <!-- Third list item -->
                     <span class="list-group-item">
-							<h3 class="list-group-item-heading"><u>How to reach Kerala</u></h3>
-							<p class="list-group-item-text">Kerala can be accessed by air; the state has three major international airports. One in the southern part, Thiruvananthapuram International Airport, one in central Kerala, the Cochin International Airport and the other in northern part, Karipur or Calicut International Airport.
-							Kerala is easily accessible by road from any part of the country through National Highways 17, 47 and 49. Directly connected by road with Karnataka and Tamil Nadu.
-							Most of the places in and out of Kerala are interconnected by 200 Railway Stations. Direct trains to Kerala can be availed from Delhi, Mumbai, Chennai, Bangalore, Kolkata and other major Indian cities.
-							From Kochi, there are regular ships venturing towards the Lakshadweep Islands.</p>
-						</span>
+                            <h3 class="list-group-item-heading"><u>How to reach Kerala</u></h3>
+                            <p class="list-group-item-text">Kerala can be accessed by air; the state has three major international airports. One in the southern part, Thiruvananthapuram International Airport, one in central Kerala, the Cochin International Airport and the other in northern part, Karipur or Calicut International Airport.
+                            Kerala is easily accessible by road from any part of the country through National Highways 17, 47 and 49. Directly connected by road with Karnataka and Tamil Nadu.
+                            Most of the places in and out of Kerala are interconnected by 200 Railway Stations. Direct trains to Kerala can be availed from Delhi, Mumbai, Chennai, Bangalore, Kolkata and other major Indian cities.
+                            From Kochi, there are regular ships venturing towards the Lakshadweep Islands.</p>
+                        </span>
                 </div>
             </div>
         </div>
@@ -243,6 +248,7 @@
                     <p class="lead">This is the official website of Kerala Tourism, one of the most popular travel websites in India. The site contains exhaustive information on God's Own Country- Kerala</p>
                     <a href="#" class="btn btn-large btn-primary hidden-sm">Click here for more info..</a>
                     <a href="#" class="btn btn-large btn-success visible-sm">Click for more &nbsp<span class="glyphicon glyphicon-eye-open"></span></a>
+                    <br>
                     <!-- Will enable alert box when click on the below link button -->
                     <a href="#" class="btn btn-small btn-primary" id="alertMe"><span class="glyphicon glyphicon-thumbs-up">Like us</span></a>
                 </div>
