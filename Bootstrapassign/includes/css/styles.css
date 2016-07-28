@@ -169,12 +169,36 @@ h3 {
 
 
 /* Portrait & landscape phone */
-
-@media (min-width: 480px) {
+@media (min-width: 768px) and (max-width: 991px){
+   #logoimage {
+    background: url('../../images/ktourism_check.jpg') top center no-repeat;
+    padding-top: 0px;
+    height: 132px;
+}
+.navbar-header{
+   height: 132px;
+}
+#MyCarousel {
+        margin-top: 132px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+   #MyCarousel {
+        margin-top: 82px;
+    }
+    #logoimage {
+        background: url('../../images/ktourism.jpg') top center no-repeat;
+        height: 80px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
    #logoimage {
     background: url('../../images/ktourism_small.jpg') top center no-repeat;
     padding-top: 0px;
 }
+#MyCarousel {
+        margin-top: 100px;
+    }
 h4{
    font-size: 12px;
 }
@@ -184,13 +208,27 @@ p{
 
 }
 
-@media (min-width: 992px) {
+@media (max-width: 480px){
+   #logoimage{
+      width: 150px;
+      height: 132px;
+      background: url('../../images/ktourism_small.jpg') top center no-repeat;
+   }
+   .logo{
+      padding-left: 0px;
+   }
+   #MyCarousel{
+      margin-top: 132px;
+   }
+}
+
+/*@media (min-width: 992px) {
    #logoimage {
         background: url('../../images/ktourism.jpg') top center no-repeat;
         padding-top: 0px;
         max-height: 82px;
     }
-}
+}*/
 
 /* Landscape phone to portrait tablet */
 
@@ -201,9 +239,6 @@ p{
     #logoimage {
         background: url('../../images/ktourism_small.jpg') top center no-repeat;
         padding-top: 0px;
-    }
-    #MyCarousel {
-        margin-top: 100px;
     }
     #slide1 {
         background: url('../../images/carousel1_small.jpg') top center no-repeat;
@@ -262,6 +297,7 @@ p{
         font-size: 18px;
     }
     #logoimage {
-        background: url('../../images/ktourism_large.jpg') top center no-repeat;
+        background: url('../../images/ktourism.jpg') top center no-repeat;
+        height: 80px;
     }
 }
