@@ -169,21 +169,23 @@ h3 {
 
 
 /* Portrait & landscape phone */
-@media (min-width: 768px) and (max-width: 991px){
-   #logoimage {
-    background: url('../../images/ktourism_check.jpg') top center no-repeat;
-    padding-top: 0px;
-    height: 132px;
-}
-.navbar-header{
-   height: 132px;
-}
-#MyCarousel {
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #logoimage {
+        background: url('../../images/ktourism_check.jpg') top center no-repeat;
+        padding-top: 0px;
+        height: 132px;
+    }
+    #navbarheader {
+        height: 132px;
+    }
+    #MyCarousel {
         margin-top: 132px;
     }
 }
+
 @media (min-width: 992px) and (max-width: 1199px) {
-   #MyCarousel {
+    #MyCarousel {
         margin-top: 82px;
     }
     #logoimage {
@@ -191,36 +193,50 @@ h3 {
         height: 80px;
     }
 }
+
 @media (min-width: 480px) and (max-width: 767px) {
-   #logoimage {
-    background: url('../../images/ktourism_small.jpg') top center no-repeat;
-    padding-top: 0px;
-}
-#MyCarousel {
+    #logoimage {
+        background: url('../../images/ktourism_small.jpg') top center no-repeat;
+        padding-top: 0px;
+    }
+    #MyCarousel {
         margin-top: 100px;
     }
-h4{
-   font-size: 12px;
-}
-p{
-   font-size: 10px;
+    h4 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 10px;
+    }
+    #containerheader{
+      height: 100px;
+    }
 }
 
+@media (max-width: 480px) {
+    #logoimage {
+        width: 150px;
+        height: 50px;
+        background: url('../../images/ktourism_small.jpg') top center no-repeat;
+    }
+    .logo {
+         height: 50px;
+        padding-left: 0px;
+    }
+    #MyCarousel {
+        margin-top: 50px;
+    }
+    h4{
+      font-size: 10px;
+    }
+    p{
+      font-size: 7px;
+    }
+    carousel-caption{
+      margin-top: 30px;
+    }
 }
 
-@media (max-width: 480px){
-   #logoimage{
-      width: 150px;
-      height: 132px;
-      background: url('../../images/ktourism_small.jpg') top center no-repeat;
-   }
-   .logo{
-      padding-left: 0px;
-   }
-   #MyCarousel{
-      margin-top: 132px;
-   }
-}
 
 /*@media (min-width: 992px) {
    #logoimage {
@@ -229,6 +245,7 @@ p{
         max-height: 82px;
     }
 }*/
+
 
 /* Landscape phone to portrait tablet */
 
@@ -259,11 +276,8 @@ p{
     p {
         font-size: 12px;
     }
-    h4{
-      font-size: 14px;
-    }
-    .logo {
-        height: 100px;
+    h4 {
+        font-size: 14px;
     }
 }
 
